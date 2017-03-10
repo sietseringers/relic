@@ -152,6 +152,8 @@ endforeach(SRC)
 
 list(APPEND RELIC_SRCS ${ARITH_SRCS})
 
+list(APPEND RELIC_SRCS "sizes.c")
+
 list(APPEND RELIC_SRCS ${ARITH_ASMS})
 set_source_files_properties(${ARITH_ASMS} PROPERTIES LANGUAGE C COMPILE_FLAGS "-DASM -x assembler-with-cpp")
 
